@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Oct 30 21:04:54 2018
+# Process ID: 15772
+# Log file: D:/XilinxNotVM/Project/lab6/planAhead_run_3/planAhead.log
+# Journal file: D:/XilinxNotVM/Project/lab6/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/XilinxNotVM/Project/lab6/pa.fromHdl.tcl
+# create_project -name lab6 -dir "D:/XilinxNotVM/Project/lab6/planAhead_run_3" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "lab6.ucf" [current_fileset -constrset]
+Adding file 'D:/XilinxNotVM/Project/lab6/lab6.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {lab6.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top lab6 $srcset
+# add_files [list {lab6.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/Project/lab6/lab6.vhf" into library work
+Loading clock regions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/XilinxNotVM/Project/lab6/lab6.ucf]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_121/D1_D0_MUX_1' at site P59, Unknown instance type 'RTL_MUX' [D:/XilinxNotVM/Project/lab6/lab6.ucf:4]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_118/D1_D0_MUX_1' at site P61, Unknown instance type 'RTL_MUX' [D:/XilinxNotVM/Project/lab6/lab6.ucf:6]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_119/D1_D0_MUX_1' at site P62, Unknown instance type 'RTL_MUX' [D:/XilinxNotVM/Project/lab6/lab6.ucf:8]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_120/D1_D0_MUX_1' at site P66, Unknown instance type 'RTL_MUX' [D:/XilinxNotVM/Project/lab6/lab6.ucf:10]
+Finished Parsing UCF File [D:/XilinxNotVM/Project/lab6/lab6.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: b4166ba3
+open_rtl_design: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 581.406 ; gain = 117.031
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P83 [get_ports Buz_P83]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports common0_P44]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports common1_P43]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports common2_P33]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports common3_P30]
+endgroup
+set_property is_loc_fixed false [get_ports [list  common3_P30]]
+startgroup
+set_property package_pin P45 [get_ports inPB1_P45]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports OS_P123]
+endgroup
+set_property is_loc_fixed false [get_ports [list  OS_P123]]
+set_property is_loc_fixed true [get_ports [list  OS_P123]]
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See D:/XilinxNotVM/Project/lab6\planAhead_pid15772.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Oct 30 21:20:42 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

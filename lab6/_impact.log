@@ -1,0 +1,177 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Thu Nov 08 15:02:08 2018
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: 'D:\XilinxNotVM\Project\lab6\\auto_project.ipf' already exists.
+Original project has been renamed to'D:\XilinxNotVM\Project\lab6\\auto_project_1.ipf'.
+Project: D:\XilinxNotVM\Project\lab6\\auto_project.ipf created.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addConfigDevice  -name "lab6mcs" -path"D:\XilinxNotVM\Project\lab6\"
+// *** BATCH CMD : setSubmode -pffspi
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpiType -value ""
+// *** BATCH CMD : addDesign -version 0 -name "0"
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr autoSize -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr fileFormat -value "mcs"
+// *** BATCH CMD : setAttribute -configdevice -attr fillValue -value "FF"
+// *** BATCH CMD : setAttribute -configdevice -attr swapBit -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : setAttribute -configdevice -attr multiboot -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr spiSelected -value "TRUE"
+// *** BATCH CMD : addPromDevice -p 1 -size 1024 -name 1M
+'1': Added Device 1M successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : setSubmode -pffspi
+// *** BATCH CMD : setMode -pff
+------------------------  GUI: Wizard Data Report  ---------------------------
+      Compression : false
+      Fill Value : FF
+      Output Format : mcs
+      Swap Bits : false
+      LoadDirection : UP
+      PROM Basename : lab6mcs
+      File Location : D:\XilinxNotVM\Project\lab6\/
+      Auto Select : false
+      Number of Revisions : 1
+      Number of PROMs : 1
+      PROM Name : 1M   PROM Size : 1048576 bits
+-------------------------- END of Report ----------------------------
+// *** BATCH CMD : setAttribute -design -attr name -value "0000"
+// *** BATCH CMD : addDevice -p 1 -file "D:/XilinxNotVM/Project/lab6/lab6.bit"
+'1': Loading file 'D:/XilinxNotVM/Project/lab6/lab6.bit' ...
+INFO:iMPACT - Elapsed time =      0 sec.
+done.
+INFO:iMPACT:501 - '1': Added Device xc6slx9 successfully.
+----------------------------------------------------------------------
+Add one device.532c1INFO:iMPACT - Current time: 08-Nov-18 3:02:36 PM
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffspi
+Total configuration bit size = 2724832  bits.
+Total configuration byte size = 340604 bytes.
+// *** BATCH CMD : generate
+0x5327c (340604) bytes loaded up from 0x0
+Using user-specified prom size of 1024K
+Writing file "D:\XilinxNotVM\Project\lab6\lab6mcs.mcs".
+Writing file "D:\XilinxNotVM\Project\lab6\lab6mcs.prm".
+Writing file "D:\XilinxNotVM\Project\lab6\lab6mcs.cfi".
+// *** BATCH CMD : setCurrentDesign -version 0
+Project: 'D:\XilinxNotVM\Project\lab6\\auto_project.ipf' created.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : saveProjectFile -file"D:\XilinxNotVM\Project\lab6\\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: 'D:\XilinxNotVM\Project\lab6\\auto_project.ipf' already exists.
+Original project has been renamed to'D:\XilinxNotVM\Project\lab6\\auto_project_1.ipf'.
+Project: D:\XilinxNotVM\Project\lab6\\auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: 'D:\XilinxNotVM\Project\lab6\\auto_project.ipf' already exists.
+Original project has been renamed to'D:\XilinxNotVM\Project\lab6\\auto_project_1.ipf'.
+Project: D:\XilinxNotVM\Project\lab6\\auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setCable -port svf -file"D:/XilinxNotVM/Project/lab6/lab6svf.svf"
+// *** BATCH CMD : addDevice -p 1 -file"D:/XilinxNotVM/14.7/ISE_DS/ISE/spartan6/data/xc6slx9.bsd"
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+INFO:iMPACT:1777 - 
+   Reading D:/XilinxNotVM/14.7/ISE_DS/ISE/spartan6/data/xc6slx9.bsd...
+INFO:iMPACT:501 - '1': Added Device XC6SLX9 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT:1777 - 
+   Reading D:/XilinxNotVM/14.7/ISE_DS/ISE/spartan6/data/xc6slx9.bsd...
+----------------------------------------------------------------------
+Selected part: M25P80
+// *** BATCH CMD : attachflash -position 1 -spi "M25P80"
+Unprotect sectors: FALSE
+// *** BATCH CMD : assignfiletoattachedflash -position 1 -file"D:/XilinxNotVM/Project/lab6/lab6mcs.mcs"
+INFO:iMPACT - Current time: 08-Nov-18 3:03:58 PM
+// *** BATCH CMD : Program -p 1 -dataWidth 1 -spionly -e -loadfpga 
+
+'1': SPI access core not detected. SPI access core will be downloaded to thedevice to enable operations.
+INFO:iMPACT - Downloading core file   D:/XilinxNotVM/14.7/ISE_DS/ISE/spartan6/data/xc6slx9_spi.cor.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT:2492 - '1': Completed downloading core to device.
+'1': IDCODE is '13' (in hex).
+'1': ID Check passed.
+'1': IDCODE is '13' (in hex).
+'1': ID Check passed.
+'1': Erasing Device.
+'1': Using Sector Erase.
+'1': Programming Flash.
+'1':Programming in x1 mode.
+'1': Programmed successfully.
+INFO:iMPACT - '1': Flash was programmed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+Project: 'D:\XilinxNotVM\Project\lab6\\auto_project.ipf' created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file"D:\XilinxNotVM\Project\lab6\\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   D:\XilinxNotVM\Project\lab6\webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff

@@ -1,0 +1,2 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/XilinxNotVM/Project/lab8/BCD16bit.vhf,-w,D:/XilinxNotVM/Project/instantlogic/BCD16bit.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/XilinxNotVM/Project/lab8/lab8.vhf,-w,D:/XilinxNotVM/Project/lab8/lab8.sch
